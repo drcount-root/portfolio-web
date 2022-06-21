@@ -1,0 +1,54 @@
+body {
+  background-color: #1d1e20 !important;
+}
+
+nav {
+  background-color: #121212;
+  padding: 0 150px;
+  border-bottom: 2px solid red;
+}
+
+@media only screen and (max-width: 720px) {
+  nav {
+    border-bottom: 2px solid greenyellow;
+    background-color: black;
+    padding: 0 5px 0 12px;
+  }
+  .nav-item {
+    text-align: center;
+  }
+}
+
+.brand-link {
+  color: snow !important;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: snow !important;
+  font-size: 16px;
+  font-weight: 500;
+  /* border: 1px solid blue; */
+  margin: 0 10px;
+}
+
+/* a {
+  text-decoration: none;
+  color: aliceblue;
+} */
+
+footer {
+  background-color: #121212;
+  border: 1px solid yellowgreen;
+  margin-bottom: 1px;
+  border-bottom-color: gold;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.copyright-name {
+  color: yellowgreen;
+  font-weight: 500;
+}

@@ -1,0 +1,126 @@
+baseURL: "https://arkalim.org"
+languageCode: en-us
+title: home/
+theme: PaperMod
+
+menu:
+  main:
+    # - identifier: home
+    #   name: Home
+    #   url: /
+    #   weight: 10
+    - identifier: about
+      name: about/
+      url: /about
+      weight: 10
+    - identifier: projects
+      name: projects/
+      url: /projects
+      weight: 20
+    - identifier: experience
+      name: experiences/
+      url: /experience
+      weight: 30
+    # - identifier: blog
+    #   name: blog/
+    #   url: /blog
+    #   weight: 40
+    - identifier: search
+      name: search/
+      url: /search
+      weight: 40
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Subham Sahu"
+    subtitle: Front End Developer & MERN Enthusiast
+    # imageUrl: "home/me.jpg"
+    # imageWidth: 220
+    # imageHeight: 220
+    buttons:
+      # - name: LinkedIn
+      #   url: "https://www.linkedin.com/in/about-subham-sahu"
+
+      # - name: GitHub
+      #   url: "https://github.com/drcount-root"
+
+      - name: Resume
+        url: "https://drive.google.com/file/d/1R3Rvs4JtDLb1GQsnQDEE0C0FFJwqqwYJ/view"
+
+      - name: Tags
+        url: "/tags"
+
+      - name: Blogs
+        url: "/blogs"
+
+      - name: Captures
+        url: "/captures"
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:about.subhamsahu@gmail.com"
+
+    - name: "github"
+      url: "https://github.com/drcount-root"
+
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/about-subham-sahu"
+
+    - name: "twitter"
+      url: "https://mobile.twitter.com/about_subham"
+
+    - name: "whatsapp"
+      url: "https://wa.me/918016256959"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+copyright: "&copy; 2022 Subham Sahu"
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
